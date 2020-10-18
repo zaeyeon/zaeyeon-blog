@@ -1,0 +1,21 @@
+import React from 'react';
+import styled from 'styled-components';
+
+// Local Component
+import Layout from '../../../components/layout';
+
+const Container = styled.div`
+`;
+
+function ReactNativePage() {
+
+    return (
+      <Layout>
+        <Container>
+            <h1>React-Native</h1>
+        </Container>
+      </Layout>
+    )  
+}
+
+export default ReactNativePage

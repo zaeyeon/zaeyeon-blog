@@ -7,10 +7,51 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import styled from 'styled-components';
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Profile from './profile'
+import Category from './category';
+
 import "./layout.css"
+
+
+const Container = styled.div`
+display: inline;
+`;
+
+const BodyContainer = styled.div`
+margin: 2rem 12.5vw;
+padding: 0 1rem;
+display: flex;
+`;
+
+const LeftContainer = styled.div`
+display: inline-block;
+margin-top: 40px;
+`;
+
+const PostListContainer = styled.div`
+padding-left: 4vw;
+display: inline-block;
+`;
+
+const CategoryContainer = styled.div`
+margin-top: 20px;
+display: table;
+width: 15vw;
+background-color: #ffffff;
+border: 2.5px solid #eeeeee;
+border-radius: 30px 30px 30px 30px;
+padding: 10px 10px 10px 10px;
+position: sticky;
+top: 330px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+box-shadow: none;
+`;
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,25 +65,18 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
-    </>
+    <Container>
+      <Header siteTitle={`zaeyeon.log`} />
+      <BodyContainer style={{maxWidth: 1000}}>
+        <LeftContainer>
+          <Profile/>
+          <Category/>
+        </LeftContainer>
+        <PostListContainer>
+          {children}
+        </PostListContainer>
+      </BodyContainer>
+      </Container>
   )
 }
 
