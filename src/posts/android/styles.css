@@ -1,0 +1,9 @@
+
+.side-by-side {
+    width: 300;
+    background-color: yellowgreen;
+}
+
+.side-by-side > span {
+   flex: 1;
+}

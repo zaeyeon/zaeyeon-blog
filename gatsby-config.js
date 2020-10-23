@@ -52,5 +52,40 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-sharp`,
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        {
+          resolve: `@bonobolabs/gatsby-remark-images-custom-widths`,
+          options: {
+            maxWidth: 740,
+          },
+        },
+      ],
+    },
+  },
+  /*
+  {
+    resolve: 'gatsby-plugin-mdx',
+    options: {
+      extensions: ['.mdx', '.md'],
+      plugins: [
+        '@bonobolabs/gatsby-remark-images-custom-widths',
+      ],
+      gatsbyRemarkPlugins: [
+        {
+          resolve: '@bonobolabs/gatsby-remark-images-custom-widths',
+          options: {
+            maxWidth: 740,
+            linkImagesToOriginal: false,
+            quality: 80,
+          }
+        }
+      ]
+      }
+    }
+    */
   ],
 }
