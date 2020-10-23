@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import styled from 'styled-components';
+import styled, {createGlobalStyle}from 'styled-components';
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
@@ -53,6 +53,12 @@ bottom: 0px;
 box-shadow: none;
 `;
 
+const GlobalStyles = createGlobalStyle`
+  body {
+    font: 300 18px Namsan;
+  }
+`
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -66,7 +72,8 @@ const Layout = ({ children }) => {
 
   return (
     <Container>
-      <Header siteTitle={`zaeyeon.log`} />
+    <GlobalStyles/>
+      <Header siteTitle={data.site.siteMetadata.title} />
       <BodyContainer style={{maxWidth: 1000}}>
         <LeftContainer>
           <Profile/>
@@ -83,5 +90,6 @@ const Layout = ({ children }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
+
 
 export default Layout

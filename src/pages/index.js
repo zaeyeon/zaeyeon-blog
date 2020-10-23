@@ -8,7 +8,7 @@ import './index.css';
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
+    <h1>전체글 보기</h1>
       <p>
         what do I like to do? Lots of course but definitely enjoy building websities.
         Evan Williams, Twitter co-founder and former CEO, created Medium to encourage users to create posts longer than the then 140-character limit of Twitter. When it launched in 2012, Williams stated, "There's been less progress toward raising the quality of what's produced."[5] By April 2013, Williams reported there were 30 full-time staff working on the platform,[6] including a vacancy for a "Storyteller" role,[7] and that it was taking "98 percent" of his time.[6] By August, Williams reported that the site was still small, although he was still optimistic about it, saying "We are trying to make it as easy as possible for people who have thoughtful things to say".[8]

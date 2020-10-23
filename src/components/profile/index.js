@@ -24,7 +24,7 @@ vertical-align: middle;
 `;
 
 const InnerContainer = styled.div`
-background-color: #c3c3c3;
+background-color: #ffffff;
 width: 7vw;
 height: 7vw;
 `;
@@ -38,11 +38,14 @@ border-radius: 100px 100px 100px 100px;
 const NameText = styled.div`
 margin-top: 12px;
 font-size: 23px;
+font-family: Namsan;
+font-weight: 600;
 `;
 
 const DescripText = styled.div`
 margin-top: 3px;
 font-size: 15px;
+font-family: Namsan;
 `;
 
 
