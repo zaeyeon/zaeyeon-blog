@@ -2,6 +2,8 @@ import React from "react"
 import {Link} from "gatsby"
 import styled from 'styled-components';
 
+import "./styles.css"
+
 const Container = styled.div`
 flex: 1;
 height: 9.4rem;
