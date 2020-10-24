@@ -6,7 +6,6 @@ category: android
 thumbnail: { thumbnailSrc }
 draft: false
 ---
-<link href="styles.css" rel="stylesheet"></link>
 
 <center>
 
@@ -20,13 +19,9 @@ draft: false
 저도 이러한 문제를 겪어 몇시간동안 삽질하다 겨우 찾아낸 해결법을 알려드리겠습니다.</center>
 
 <br/>
-<img src="./images/1_1.jpeg" width="100px" align="right"> <img src="./images/1_3.jpeg" width="100px" alt="">
-
 <div class="side-by-side">
-  <img src="./images/1_1.jpeg" width="100" />
-  <img src="./images/1_3.jpeg" width="100" /> 
+<img src="./images/1_1.jpeg" width="320px" align="right">
 </div>
-
 <br/>
 
 <center>
@@ -46,7 +41,7 @@ BottomNavigationView가 있는 xml 파일에서
 
 <br/>
 
-![1_3](./images/1_3.jpeg)
+<img src="./images/1_3.jpeg" width="320px">
 
 <br/>
 

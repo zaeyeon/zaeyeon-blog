@@ -3,6 +3,7 @@ import {graphql} from 'gatsby';
 
 // Local Component
 import Layout from '../../components/layout.js';
+import "./styles.css"
 
 export default function PostTemplate({ data }) {
     const {markdownRemark} = data

@@ -1,7 +1,7 @@
 
 .side-by-side {
-    width: 300;
-    background-color: yellowgreen;
+    display: flex;
+    justify-content:space-evenly;
 }
 
 .side-by-side > span {
