@@ -28,10 +28,39 @@ margin-bottom: 4px;
 margin-right: 4px;
 border: 1px solid #000000;
 border-radius: 20px 20px 20px 20px;
+color: #000000;
+font-weight: bold;
 `;
 
 const categoryArray = [
-    "react", "react-native", "android", "ios", "javascript", "typescript", "algorithm"
+    {
+        name: "react",
+        key: 1
+    },
+    {
+        name: "react-native",
+        key: 2
+    },
+    {
+        name: "android",
+        key: 3,
+    },
+    {
+        name: "ios",
+        key: 4,
+    },
+    {
+        name: "javascript",
+        key: 5,
+    },
+    {
+        name: "typescript",
+        key: 6,
+    },
+    {
+        name: "algorithm",
+        key: 7,
+    }
 ]
 
 
@@ -48,10 +77,12 @@ const CategoryItem = ({name}) => {
 const Category = ({}) => {
     return (
         <Container>
-            {categoryArray.map((name, index) => {
+            {categoryArray.map((item, index) => {
                 return (
                     <CategoryItem
-                    name={name}/>
+                    key={index}
+                    name={item.name}
+                    />
                 )
             })}
         </Container>

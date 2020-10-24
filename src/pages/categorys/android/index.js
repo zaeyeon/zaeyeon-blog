@@ -30,11 +30,20 @@ export const pageQuery = graphql`
      edges {
        node {
          id
-         excerpt(pruneLength: 250)
+         html
+         excerpt(pruneLength: 600)
          frontmatter {
            date(formatString: "MMMM DD, YYYY")
            slug
            title
+           preview
+           thumbnailImage {
+            childImageSharp { 
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+           }
          }
        }
      }

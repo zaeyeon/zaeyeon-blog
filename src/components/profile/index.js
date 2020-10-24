@@ -33,6 +33,7 @@ const ProfileImage = styled.img`
 width: 7vw;
 height: 7vw;
 border-radius: 100px 100px 100px 100px;
+object-fit: cover;
 `;
 
 const NameText = styled.div`

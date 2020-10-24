@@ -22,18 +22,17 @@ display: inline;
 `;
 
 const BodyContainer = styled.div`
-margin: 2rem 12.5vw;
+margin: 3.5rem 17.5vw;
 padding: 0 1rem;
 display: flex;
 `;
 
 const LeftContainer = styled.div`
 display: inline-block;
-margin-top: 40px;
 `;
 
 const PostListContainer = styled.div`
-padding-left: 4vw;
+padding-left: 2.7vw;
 display: inline-block;
 `;
 
@@ -74,7 +73,7 @@ const Layout = ({ children }) => {
     <Container>
     <GlobalStyles/>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <BodyContainer style={{maxWidth: 1000}}>
+      <BodyContainer style={{maxWidth: 1050}}>
         <LeftContainer>
           <Profile/>
           <Category/>
