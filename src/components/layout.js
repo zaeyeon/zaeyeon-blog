@@ -32,8 +32,9 @@ display: inline-block;
 `;
 
 const PostListContainer = styled.div`
+flex: 1;
 padding-left: 2.7vw;
-display: inline-block;
+display: flex;
 `;
 
 const CategoryContainer = styled.div`

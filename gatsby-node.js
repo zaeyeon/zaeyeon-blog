@@ -1,8 +1,6 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
   
-    const blogPostTemplate = require.resolve(`./src/templates/blogTemplate.js`)
-    const AndroidPage = require.resolve(`./src/pages/categorys/android/index.js`)
     const PostTemplate = require.resolve('./src/components/PostTemplate');
 
 

@@ -47,8 +47,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `android`,
-        path: `${__dirname}/src/posts/android`,
+        name: `posts`,
+        path: `${__dirname}/src/posts`,
       },
     },
     `gatsby-transformer-remark`,

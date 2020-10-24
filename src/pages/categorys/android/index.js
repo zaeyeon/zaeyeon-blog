@@ -6,23 +6,37 @@ import {graphql} from 'gatsby';
 import Layout from '../../../components/layout';
 import PostLinkItem from '../../../components/PostLinkItem'
 
-const IndexPage = ({
+const Container = styled.div`
+flex: 1;
+`;
+
+const AndroidPage = ({
   data: {
     allMarkdownRemark: {edges},
   },
 }) => {
+  console.log("IndexPage", edges);
   const Posts = edges
   .filter(edge => !!edge.node.frontmatter.date)
-  .map(edge => <PostLinkItem key={edge.node.id} post={edge.node}/>)
-
+  .map(edge => {
+    if(edge.node.frontmatter.category==="android") {
+      return (
+        <PostLinkItem key={edge.node.id} post={edge.node}/>
+        )
+    }
+  })
+  
   return (
     <Layout>
-      <div>{Posts}</div>
+      <Container>
+        <h1>Android</h1>
+        <div>{Posts}</div>
+        </Container>
     </Layout>
   )
 }
 
-export default IndexPage
+export default AndroidPage
 
 export const pageQuery = graphql`
  query {
@@ -30,13 +44,13 @@ export const pageQuery = graphql`
      edges {
        node {
          id
-         html
          excerpt(pruneLength: 600)
          frontmatter {
            date(formatString: "MMMM DD, YYYY")
            slug
            title
            preview
+           category
            thumbnailImage {
             childImageSharp { 
               fluid(maxWidth: 2048, quality: 100) {
@@ -50,39 +64,3 @@ export const pageQuery = graphql`
    }
  }
 `;
-/*
-const Container = styled.div`
-`;
-
-function AndroidPage({ data }) {
-  const {markdownRemark} = data
-  const {frontmatter, html} = markdownRemark
-
-    return (
-      <Layout>
-        <Container>
-            <h1>Android</h1>
-            <h1>{frontmatter.title}</h1>
-            <h2>{frontmatter.date}</h2>
-            <div
-            dangerouslySetInnerHTML={{__html: html}}/>
-        </Container>
-      </Layout>
-    )  
-}
-
-export default AndroidPage
-
-export const pageQuery = graphql`
- query($slug: String!) {
-     markdownRemark(frontmatter: {slug: {eq: $slug}}) {
-         html
-         frontmatter {
-             date(formatString: "MMMM DD, YYYY")
-             slug
-             title
-         }
-     }
- }
-`;
-*/

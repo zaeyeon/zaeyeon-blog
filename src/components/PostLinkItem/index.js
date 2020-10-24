@@ -12,8 +12,6 @@ padding-left: 6px;
 padding-top: 0.65em;
 `;
 
-const LinkContainer = styled.div`
-`;
 
 const TitleContainer = styled.div`
 font-size: 1.1rem;
@@ -46,12 +44,13 @@ height: 8rem;
 const ThumbnailImage = styled.img`
 width: 8rem;
 height: 8rem;
+object-fit: cover;
 `;
 
 const BodyContainer = styled.div`
 display: flex;
-justify-content: space-evenly;
 height: 6rem;
+flex: 1;
 `;
 
 const LeftContainer = styled.div`
@@ -64,9 +63,8 @@ const PostLinkItem = ({ post }) => {
    console.log("PostLinkItem post", post);
 
    return (
+    <Link to={post.frontmatter.slug} className="link">
     <Container>
-        <LinkContainer>
-        <Link to={post.frontmatter.slug} className="link">
             <BodyContainer>
                 <LeftContainer>
                 <TitleContainer>
@@ -81,9 +79,8 @@ const PostLinkItem = ({ post }) => {
                   src={post.frontmatter.thumbnailImage.childImageSharp.fluid.src} alt=""/>
               </ThumbnailContainer>
               </BodyContainer>
-        </Link>
-        </LinkContainer>
     </Container>
+    </Link>
    )
 }
 

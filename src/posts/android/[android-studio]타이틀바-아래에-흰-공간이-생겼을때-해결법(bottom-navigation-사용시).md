@@ -3,7 +3,6 @@ slug: "/categorys/android/1"
 title: "Bottm Navigation 사용시 타이틀바 아래에 흰 공간이 생겼을때 해결법"
 date: 2020-10-02 13:10:67
 category: android
-thumbnail: { thumbnailSrc }
 preview: "안드로이드 스튜디오 최신(5.0.0 이상)버전 부터 Bottom Navigation Activity를 생성하면 곧바로 하단바가 생겨서 편하게 사용 할 수 있는데, 이때 타이틀바아래에 흰 공간이 생겨 내용을 가려버리는 문제가 생깁니다. 저도 이러한 문제를 겪어 몇시간동안 삽질하다 겨우 찾아낸 해결법을 알려드리겠습니다."
 thumbnailImage: "./images/1_1.jpeg"
 ---
