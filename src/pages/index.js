@@ -27,7 +27,7 @@ const HomePage = ({
   return (
     <Layout>
       <Container>
-        <h1>전체글 보기</h1>
+        <h2>전체글 보기</h2>
         <div>{Posts}</div>
         </Container>
     </Layout>

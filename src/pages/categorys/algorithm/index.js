@@ -28,7 +28,7 @@ const AlgorithmPage = ({
   return (
     <Layout>
       <Container>
-        <h1>Algorithm</h1>
+        <h2>Algorithm</h2>
         <div>{Posts}</div>
         </Container>
     </Layout>

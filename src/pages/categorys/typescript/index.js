@@ -28,7 +28,7 @@ const TypescriptPage = ({
   return (
     <Layout>
       <Container>
-        <h1>Typescript</h1>
+        <h2>Typescript</h2>
         <div>{Posts}</div>
         </Container>
     </Layout>

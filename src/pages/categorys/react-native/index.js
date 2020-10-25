@@ -28,7 +28,7 @@ const ReactNativePage = ({
   return (
     <Layout>
       <Container>
-        <h1>React-Native</h1>
+        <h2>React-Native</h2>
         <div>{Posts}</div>
         </Container>
     </Layout>

@@ -28,7 +28,7 @@ const JavascriptPage = ({
   return (
     <Layout>
       <Container>
-        <h1>Javascript</h1>
+        <h2>Javascript</h2>
         <div>{Posts}</div>
         </Container>
     </Layout>

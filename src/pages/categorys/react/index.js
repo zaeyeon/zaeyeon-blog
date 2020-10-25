@@ -29,8 +29,8 @@ const ReactPage = ({
   return (
     <Layout>
       <Container>
-        <h1>React</h1>
-        <div>{Posts}</div>
+        <h2>React</h2>
+        <p>{Posts}</p>
       </Container>
     </Layout>
   )

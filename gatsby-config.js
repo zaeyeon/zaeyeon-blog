@@ -66,26 +66,11 @@ module.exports = {
       ],
     },
   },
-  /*
   {
-    resolve: 'gatsby-plugin-mdx',
+    resolve: `gatsby-plugin-typography`,
     options: {
-      extensions: ['.mdx', '.md'],
-      plugins: [
-        '@bonobolabs/gatsby-remark-images-custom-widths',
-      ],
-      gatsbyRemarkPlugins: [
-        {
-          resolve: '@bonobolabs/gatsby-remark-images-custom-widths',
-          options: {
-            maxWidth: 740,
-            linkImagesToOriginal: false,
-            quality: 80,
-          }
-        }
-      ]
-      }
-    }
-    */
+      pathToConfigModule: `${__dirname}/src/utils/typography.js`,
+    },
+  },
   ],
 }

@@ -28,7 +28,7 @@ const IOSPage = ({
   return (
     <Layout>
       <Container>
-        <h1>IOS</h1>
+        <h2>IOS</h2>
         <div>{Posts}</div>
         </Container>
     </Layout>

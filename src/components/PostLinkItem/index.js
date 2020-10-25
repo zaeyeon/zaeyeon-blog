@@ -9,33 +9,32 @@ flex: 1;
 height: 9.4rem;
 display: flex;
 background-color: #ffffff;
-border-bottom: 1px solid #eeeeee;
 padding-left: 6px;
 padding-top: 0.65em;
 `;
 
 
 const TitleContainer = styled.div`
-font-size: 1.1rem;
-font-weight: bold;
+font-size: 0.98rem;
+font-weight: 500;
 color: #000000;
-height: 1.1rem;
 overflow: hidden;
 display: -webkit-box;
 -webkit-line-clamp: 1;
 -webkit-box-orient: vertical; 
+font-family: Noto Sans;
 `;
 
 const DescripContainer = styled.div`
-margin-top: 10px;
-font-size: 0.9rem;
-color: #000000;
-
+margin-top: 4px;
+font-size: 0.8rem;
+color: #696969;
+font-weight: 500;
 overflow: hidden;
 display: -webkit-box;
--webkit-line-clamp: 6;
+-webkit-line-clamp: 5;
 -webkit-box-orient: vertical; 
-
+font-family: Noto Sans;
 `;
 
 const ThumbnailContainer = styled.div`

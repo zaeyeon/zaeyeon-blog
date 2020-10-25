@@ -1,6 +1,10 @@
 .header {
-    background-color: black;
+    background-image:  url("../../images/space2.jpg");
+    /*background: linear-gradient(72deg, #1FA2FF ,#12D8FA, #A6FFCB);*/
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-bottom: 1.45rem;
+    font-size: 200px;
 }
 
 .headerInner {

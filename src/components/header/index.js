@@ -1,7 +1,15 @@
 import { Link } from "gatsby"
+import styled from 'styled-components';
 import PropTypes from "prop-types"
 import React from "react"
 import './index.css';
+
+
+
+const headerTitle = styled.div`
+size: 10px;
+font-family: 'Righteous', cursive;
+`;
 
 const Header = ({ siteTitle }) => (
   <header className={"header"}>
@@ -12,6 +20,7 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `white`,
             textDecoration: `none`,
+            fontFamily: 'Sriracha',
           }}
         >
           {siteTitle}

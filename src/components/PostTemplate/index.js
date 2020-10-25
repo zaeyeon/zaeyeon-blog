@@ -10,6 +10,26 @@ const Container = styled.div`
 flex: 1;
 `;
 
+const TitleContainer = styled.div`
+font-family: Do Hyeon;
+font-weight: 300;
+font-size: 1.8rem;
+`;
+
+const DateText = styled.div`
+font-family: Noto Sans;
+font-size: 0.8rem;
+font-weight: 500;
+text-align: right;
+`;
+
+const BodyContainer = styled.div`
+padding-top: 4vh;
+font-family: Noto Sans;
+font-weight: 500;
+font-size: 0.87rem;
+`;
+
 export default function PostTemplate({ data }) {
     const {markdownRemark} = data
     const {frontmatter, html} = markdownRemark
@@ -31,9 +51,13 @@ export default function PostTemplate({ data }) {
     return (
         <Layout>
             <Container>
-            <h1>{frontmatter.title}</h1>
-            <p>{formatDateToString(frontmatter.date)}</p>
-            <div
+            <TitleContainer
+            dangerouslySetInnerHTML={{__html: frontmatter.mdTitle}}/>
+            <DateText>
+            {formatDateToString(frontmatter.date)}
+            </DateText>
+            
+            <BodyContainer
             dangerouslySetInnerHTML={{__html: html}}/>
             </Container>
         </Layout>
@@ -48,6 +72,7 @@ export const pageQuery = graphql`
              date
              slug
              title
+             mdTitle
          }
      }
  }

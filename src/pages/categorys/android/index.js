@@ -29,8 +29,10 @@ const AndroidPage = ({
   return (
     <Layout>
       <Container>
-        <h1>Android</h1>
+        <h2>Android</h2>
+        <body>
         <div>{Posts}</div>
+        </body>
         </Container>
     </Layout>
   )

@@ -22,7 +22,7 @@ display: inline;
 `;
 
 const BodyContainer = styled.div`
-margin: 3.5rem 17.5vw;
+margin: 3.5rem 11.3vw;
 padding: 0 1rem;
 display: flex;
 `;
@@ -74,7 +74,7 @@ const Layout = ({ children }) => {
     <Container>
     <GlobalStyles/>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <BodyContainer style={{maxWidth: 1050}}>
+      <BodyContainer style={{maxWidth: 1000}}>
         <LeftContainer>
           <Profile/>
           <Category/>
