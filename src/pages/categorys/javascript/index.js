@@ -28,7 +28,7 @@ const JavascriptPage = ({
   return (
     <Layout>
       <Container>
-        <h2>Javascript</h2>
+        <h2 style={{fontWeight:"100"}}>Javascript</h2>
         <div>{Posts}</div>
         </Container>
     </Layout>

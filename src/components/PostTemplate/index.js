@@ -4,7 +4,9 @@ import styled from 'styled-components';
 
 // Local Component
 import Layout from '../../components/layout.js';
+import Utterances from '../Utterances';
 import "./styles.css"
+
 
 const Container = styled.div`
 flex: 1;
@@ -28,6 +30,10 @@ padding-top: 4vh;
 font-family: Noto Sans;
 font-weight: 500;
 font-size: 0.87rem;
+`;
+
+const CommentContainer = styled.div`
+padding-top: 50px;
 `;
 
 export default function PostTemplate({ data }) {
@@ -56,9 +62,11 @@ export default function PostTemplate({ data }) {
             <DateText>
             {formatDateToString(frontmatter.date)}
             </DateText>
-            
             <BodyContainer
             dangerouslySetInnerHTML={{__html: html}}/>
+            <CommentContainer>
+            <Utterances repo="zaeyeon/zaeyeon-blog-utterance"/>
+            </CommentContainer>
             </Container>
         </Layout>
     )

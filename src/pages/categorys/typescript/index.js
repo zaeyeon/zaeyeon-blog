@@ -28,7 +28,7 @@ const TypescriptPage = ({
   return (
     <Layout>
       <Container>
-        <h2>Typescript</h2>
+        <h2 style={{fontWeight:"100"}}>Typescript</h2>
         <div>{Posts}</div>
         </Container>
     </Layout>

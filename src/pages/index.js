@@ -27,7 +27,7 @@ const HomePage = ({
   return (
     <Layout>
       <Container>
-        <h2>전체글 보기</h2>
+        <h2  style={{fontWeight:"100"}}>전체글 보기</h2>
         <div>{Posts}</div>
         </Container>
     </Layout>

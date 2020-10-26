@@ -28,7 +28,7 @@ const AlgorithmPage = ({
   return (
     <Layout>
       <Container>
-        <h2>Algorithm</h2>
+        <h2 style={{fontWeight:"100"}}>Algorithm</h2>
         <div>{Posts}</div>
         </Container>
     </Layout>

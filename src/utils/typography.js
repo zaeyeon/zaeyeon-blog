@@ -36,7 +36,6 @@ const typography = new Typography({
         name: "Gothic A1",
         styles: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
     },
-  
   ],
   headerFontFamily: ["Do Hyeon", "sans-serif"],
   bodyFontFamily: ["Noto Sans", "serif"],

@@ -29,7 +29,7 @@ const ReactPage = ({
   return (
     <Layout>
       <Container>
-        <h2>React</h2>
+        <h2 style={{fontWeight:"100"}}>React</h2>
         <p>{Posts}</p>
       </Container>
     </Layout>

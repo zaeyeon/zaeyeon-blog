@@ -29,7 +29,7 @@ const AndroidPage = ({
   return (
     <Layout>
       <Container>
-        <h2>Android</h2>
+        <h2  style={{fontWeight:"100"}}>Android</h2>
         <body>
         <div>{Posts}</div>
         </body>

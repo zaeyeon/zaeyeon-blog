@@ -28,7 +28,7 @@ const IOSPage = ({
   return (
     <Layout>
       <Container>
-        <h2>IOS</h2>
+        <h2 style={{fontWeight:"100"}}>IOS</h2>
         <div>{Posts}</div>
         </Container>
     </Layout>
