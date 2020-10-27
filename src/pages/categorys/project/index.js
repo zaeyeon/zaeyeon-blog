@@ -10,16 +10,16 @@ const Container = styled.div`
 flex: 1;
 `;
 
-const ReactPage = ({
+const ProjectPage = ({
   data: {
     allMarkdownRemark: {edges},
   },
 }) => {
-  console.log("ReactPage", edges);
+  console.log("ProjectPage", edges);
   const Posts = edges
   .filter(edge => !!edge.node.frontmatter.date)
   .map(edge => {
-    if(edge.node.frontmatter.category === "react") {
+    if(edge.node.frontmatter.category === "project") {
       return (
         <PostLinkItem key={edge.node.id} post={edge.node}/>
       )
@@ -36,7 +36,7 @@ const ReactPage = ({
   )
 }
 
-export default ReactPage
+export default ProjectPage
 
 export const pageQuery = graphql`
  query {

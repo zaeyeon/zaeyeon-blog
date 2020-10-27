@@ -70,6 +70,10 @@ const categoryArray = [
     {
         name: "algorithm",
         key: 7,
+    },
+    {
+        name: "project",
+        key: 8,
     }
 ]
 

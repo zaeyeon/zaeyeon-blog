@@ -77,7 +77,7 @@ const PostLinkItem = ({ post }) => {
                 </LeftContainer>
               <ThumbnailContainer>
                   <ThumbnailImage
-                  src={post.frontmatter.thumbnailImage.childImageSharp.fluid.src} alt=""/>
+                  src={post.frontmatter.thumbnail.childImageSharp.fluid.src} alt=""/>
               </ThumbnailContainer>
               </BodyContainer>
     </Container>

@@ -50,7 +50,7 @@ export const pageQuery = graphql`
            title
            preview
            category
-           thumbnailImage {
+           thumbnail {
             childImageSharp { 
               fluid(maxWidth: 2048, quality: 100) {
                 ...GatsbyImageSharpFluid
