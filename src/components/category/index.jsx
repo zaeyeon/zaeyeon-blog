@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
-import {Link} from 'gatsby';
+import {Link, graphql, useStaticQuery} from 'gatsby';
 
+import algorithmObj from '../../posts/algorithm/index';
 import './index.css';
 
 const Container = styled.div`
@@ -45,51 +46,64 @@ margin-right: 5px;
 const categoryArray = [
     {
         name: "react",
-        key: 1
+        key: 1,
+        amount: 1,
     },
     {
         name: "react-native",
-        key: 2
+        key: 2,
+        amount: 0,
     },
     {
         name: "android",
         key: 3,
+        amount: 2,
     },
     {
         name: "ios",
         key: 4,
+        amount: 0,
     },
     {
         name: "javascript",
         key: 5,
+        amount: 0,
     },
     {
         name: "typescript",
         key: 6,
+        amount: 0,
     },
     {
         name: "algorithm",
         key: 7,
+        amount: 1,
     },
     {
         name: "project",
         key: 8,
+        amount: 1,
     }
 ]
 
+const CategoryItem = ({name, amount}) => {
 
-const CategoryItem = ({name}) => {
+
     return (
       <Link to={`/categorys/${name}`} className="category">
           <CategoryItemContainer>
               <CategoryIndicator/>
-            {" " +name}
+            {" " + name + " (" + amount + ")"}
             </CategoryItemContainer>
         </Link>
     )
 }
 
 const Category = ({}) => {
+    const [postAmountArray, setPostAmountArray] = useState<Array>[]
+
+      console.log("Category posts", algorithmObj);
+
     return (
         <Container>
             {categoryArray.map((item, index) => {
@@ -97,6 +111,7 @@ const Category = ({}) => {
                     <CategoryItem
                     key={index}
                     name={item.name}
+                    amount={item.amount}
                     />
                 )
             })}
@@ -105,3 +120,6 @@ const Category = ({}) => {
 }
 
 export default Category;
+
+
+ 

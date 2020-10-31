@@ -37,9 +37,9 @@ object-fit: cover;
 
 const NameText = styled.div`
 margin-top: 20px;
-font-size: 21px;
-font-family: Do Hyeon;
+font-size: 19px;
 color: #000000;
+font-weight: 400
 `;
 
 const DescripText = styled.div`
