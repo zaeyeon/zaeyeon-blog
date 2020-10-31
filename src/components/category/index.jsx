@@ -100,8 +100,6 @@ const CategoryItem = ({name, amount}) => {
 }
 
 const Category = ({}) => {
-    const [postAmountArray, setPostAmountArray] = useState<Array>[]
-
       console.log("Category posts", algorithmObj);
 
     return (
