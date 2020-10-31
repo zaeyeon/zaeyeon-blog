@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import styled from 'styled-components';
 import {Link, graphql, useStaticQuery} from 'gatsby';
 
-import algorithmObj from '../../posts/algorithm/index';
 import './index.css';
 
 const Container = styled.div`
@@ -100,8 +99,6 @@ const CategoryItem = ({name, amount}) => {
 }
 
 const Category = ({}) => {
-      console.log("Category posts", algorithmObj);
-
     return (
         <Container>
             {categoryArray.map((item, index) => {

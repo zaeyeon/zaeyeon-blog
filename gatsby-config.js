@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `zaeyeon.log`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `zaeyeon`,
+    description: `This is zaeyeon's blog`,
+    siteUrl: "https://zaeyeon.netlify.app"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -71,6 +72,15 @@ module.exports = {
     options: {
       pathToConfigModule: `${__dirname}/src/utils/typography.js`,
     },
+  },
+  'gatsby-plugin-sitemap',
+  {
+    resolve: 'gatsby-plugin-robots-txt',
+    options: {
+      host: 'https://zaeyeon.netlify.app/',
+      sitemap: 'https://zaeyeon.netlify.app/sitemap.xml',
+      policy: [{ userAgent: '*', allow: '/' }]
+    }
   },
   ],
 }
