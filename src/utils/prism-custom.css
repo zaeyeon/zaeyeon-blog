@@ -9,8 +9,8 @@
      color: #f8f8f2;
      background: none;
      text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-     font-size: 1em;
+     font-family: 'DM Sans', Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+     font-size: 1.01em;
      text-align: left;
      white-space: pre;
      word-spacing: normal;
@@ -38,7 +38,7 @@
  
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
-     background: #272822;
+     background: #1B1E2B;
  }
  
  /* Inline code */
@@ -82,7 +82,7 @@
  .token.char,
  .token.builtin,
  .token.inserted {
-     color: #FF005C;
+     color: rgb(255, 46, 123);
  }
  
  .token.operator,

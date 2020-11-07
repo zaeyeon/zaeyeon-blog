@@ -5,5 +5,5 @@
  */
 
 // You can delete this file if you're not using it
-require("prismjs/themes/prism-custom.css")
+require("prismjs/themes/prism-coy.css")
 

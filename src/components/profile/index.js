@@ -10,10 +10,9 @@ const Container = styled.div`
  display: flex;
  flex-direction: column;
  width: 16vw;
- height: 7.5vw;
+ height: 9vw;
  background-color: #ffffff;
- border-left: 12px solid #FFF59C;
- padding: 0px 10px 0px 25px;
+ padding: 0px 10px 0px 10px;
 left: 0px;
 right: 0px;
 bottom: 0px;
@@ -71,7 +70,7 @@ font-size: 15px;
 `;
 
 const SocialContainer = styled.div`
-margin-top: 0px;
+margin-top: 10px;
 display: flex;
 flex-direction: row;
 
