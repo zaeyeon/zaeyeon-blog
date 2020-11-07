@@ -28,7 +28,7 @@ const ReactNativePage = ({
   return (
     <Layout>
       <Container>
-        <h2 style={{fontWeight:"100"}}>React-Native</h2>
+        <h2 style={{fontWeight:"700", color: "#000000", fontSize: 27, fontWeight: 700}}>React-Native</h2>
         <div>{Posts}</div>
         </Container>
     </Layout>

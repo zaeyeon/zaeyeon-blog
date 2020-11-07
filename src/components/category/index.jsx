@@ -25,14 +25,14 @@ background: linear-gradient(72deg, #ffeeee, #ddefbb)
 `;
 
 const CategoryItemContainer = styled.div`
-font-size: 0.75rem;
+font-size: 0.8rem;
 color: #000000;
-font-weight: 500;
+font-weight: 400;
 padding: 1px 3px;
 display: flex;
 flex-direction: row;
 align-items: center;
-font-family: Noto Sans;
+font-family: Catamaran;
 `;
 
 const CategoryIndicator = styled.div`
@@ -51,7 +51,7 @@ const categoryArray = [
     {
         name: "react-native",
         key: 2,
-        amount: 0,
+        amount: 1,
     },
     {
         name: "android",

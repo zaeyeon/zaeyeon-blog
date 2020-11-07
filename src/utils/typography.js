@@ -36,10 +36,30 @@ const typography = new Typography({
         name: "Gothic A1",
         styles: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
     },
+    {
+        name: "Catamaran",
+        styles: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
+    },
+    {
+        name: "Quicksand",
+        styles: ["300", "400", "500", "600", "700"]
+    },
+    {
+      name: "Ubuntu",
+      styles: ["200","300", "400", "500", "600", "700"]
+    },
+    {
+      name: "Questrial",
+      styles: ["400"]
+    },
+    {
+      name: "DM Sans",
+      styles: ["400", "500"]
+    }
   ],
-  headerFontFamily: ["Do Hyeon", "sans-serif"],
+  headerFontFamily: ["Catamaran", "sans-serif"],
   bodyFontFamily: ["Noto Sans", "serif"],
-  headerWeight: 700,
+  headerWeight: 100,
   bodyWeight: 400,
   boldWeight: 700,
 })

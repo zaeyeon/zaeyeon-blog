@@ -13,8 +13,8 @@ flex: 1;
 `;
 
 const TitleContainer = styled.div`
-font-family: Do Hyeon;
-font-weight: 300;
+font-family: Catamaran;
+font-weight: 700;
 font-size: 1.8rem;
 `;
 
